@@ -65,6 +65,7 @@ export default function App() {
                 <h3>{p.name}</h3>
                 <p>{p.text}</p>
                 <div className="tags">{p.tags.map(t => <span key={t}>{t}</span>)}</div>
+                {p.privacy && <a className="card-link" href={p.privacy}>Privacy policy &rarr;</a>}
               </Card>
             ))}
           </div>
