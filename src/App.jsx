@@ -2,6 +2,9 @@ import { useState } from 'react'
 import Logo from './components/Logo.jsx'
 import { services, projects, CONTACT_EMAIL } from './data.js'
 
+// Link the card when it has a URL; otherwise render a plain card.
+const Card = ({ href, ...props }) => (href ? <a href={href} {...props} /> : <article {...props} />)
+
 export default function App() {
   const [filter, setFilter] = useState('All')
   const shown = projects.filter(p => filter === 'All' || p.type === filter)
@@ -56,13 +59,13 @@ export default function App() {
           </div>
           <div className="grid">
             {shown.map(p => (
-              <a key={p.name} href={p.link} className="card project">
+              <Card key={p.name} href={p.link} className="card project">
                 <div className="thumb" style={{ '--h': p.hue }}><span>{p.name[0]}</span></div>
                 <div className="meta"><span className="pill">{p.type}</span><span className="status">{p.status}</span></div>
                 <h3>{p.name}</h3>
                 <p>{p.text}</p>
                 <div className="tags">{p.tags.map(t => <span key={t}>{t}</span>)}</div>
-              </a>
+              </Card>
             ))}
           </div>
         </section>
