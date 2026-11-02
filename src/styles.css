@@ -54,3 +54,5 @@ h2{font-size:clamp(2rem,4vw,2.8rem);margin-bottom:36px}
 .footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:28px clamp(16px,5vw,64px);border-top:1px solid var(--border);color:var(--muted);font-size:.85rem}
 @media (max-width:600px){.nav nav a:not(.btn){display:none}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.card-link{display:inline-block;margin-top:14px;font-size:.85rem;color:var(--cyan)}
+.card-link:hover{text-decoration:underline}

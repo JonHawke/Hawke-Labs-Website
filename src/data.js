@@ -14,6 +14,7 @@ export const projects = [
     name: 'Kestrel', type: 'App', status: 'In development',
     text: 'All the news you follow in one place. A fast RSS reader with 580+ suggested feeds, folders, offline reading, muted words and a home-screen widget.',
     tags: ['Android', 'RSS', 'Google Play'], link: null, hue: 190,
+    privacy: './kestrel/privacy/',
   },
   {
     name: 'Train Explorer', type: 'Game', status: 'In development',
