@@ -1,5 +1,5 @@
 // Edit this file to update the site's content.
-export const CONTACT_EMAIL = 'hello@hawkelabs.com'
+export const CONTACT_EMAIL = 'hello@hawkelabs.uk'
 
 export const services = [
   { icon: '📱', title: 'Mobile Apps', text: 'Native-feeling iOS and Android apps, from first sketch to App Store launch.' },
@@ -8,9 +8,21 @@ export const services = [
   { icon: '✨', title: 'UI / UX Design', text: 'Clean interfaces and smooth interactions that people enjoy using.' },
 ]
 
-// Placeholder projects. Replace with your real apps and games.
+// Projects shown under "Our work". Set link to a URL (e.g. a Play Store page) once one exists.
 export const projects = [
-  { name: 'Skyline Dash', type: 'Game', status: 'In development', text: 'A fast-paced endless runner across neon rooftops.', tags: ['iOS', 'Android'], link: '#', hue: 280 },
-  { name: 'FocusFlow', type: 'App', status: 'Coming soon', text: 'A minimalist productivity timer that keeps you in the zone.', tags: ['iOS'], link: '#', hue: 190 },
-  { name: 'Pixel Forge', type: 'Game', status: 'Prototype', text: 'A crafting puzzle game where every block tells a story.', tags: ['PC', 'Web'], link: '#', hue: 330 },
+  {
+    name: 'Kestrel', type: 'App', status: 'In development',
+    text: 'All the news you follow in one place. A fast RSS reader with 580+ suggested feeds, folders, offline reading, muted words and a home-screen widget.',
+    tags: ['Android', 'RSS', 'Google Play'], link: null, hue: 190,
+  },
+  {
+    name: 'Train Explorer', type: 'Game', status: 'In development',
+    text: 'A multiplayer survival adventure aboard one shared train. Explore the world, craft, trade, research and fend off bandits and wildlife together.',
+    tags: ['PC', 'Multiplayer', 'Unity'], link: null, hue: 280,
+  },
+  {
+    name: 'Medieval Command', type: 'Game', status: 'In development',
+    text: 'Real-time medieval strategy for mobile. Gather resources, raise buildings, command your army and hold back waves of enemies.',
+    tags: ['Android', 'Strategy', 'Unity'], link: null, hue: 330,
+  },
 ]
